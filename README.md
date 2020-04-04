@@ -1,7 +1,5 @@
 # <img src="./fig.svg" width="48"> FIG stack!
 
-# FIG stack!
-
 #### FIG ➡ FluentBit + InfluxDB + Grafana (Not the FIG you know and love!)
 
 ## TL;DR
