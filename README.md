@@ -1,6 +1,8 @@
+# <img src="./fig.svg" width="48"> FIG stack!
+
 # FIG stack!
 
-#### FIG ➡ FluentBit + InfluxDB + Grafana
+#### FIG ➡ FluentBit + InfluxDB + Grafana (Not the FIG you know and love!)
 
 ## TL;DR
 ```
@@ -12,5 +14,9 @@
 * [Helm 3](https://helm.sh/docs/intro/install/) is installed
 * A valid cluster config is available in your ~/.kube/config
 
-### This repo is a demo setup for the writing:
+### Respository for the writing:
 https://medium.com/@aniskhan001/logging-with-fluent-bit-influxdb-282c9bc35245
+
+
+
+<sub>_Credit: [Fig icon](https://www.iconfinder.com/icons/4619630/fig_fruit_food_fruit_fruits_icon) by [sbts2018](https://www.iconfinder.com/sbts2018)_</sub>
