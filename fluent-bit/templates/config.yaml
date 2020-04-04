@@ -102,6 +102,20 @@ data:
         Name  file
         Match *
         Path /tmp/fluent-bit.log
+{{ else if eq .Values.backend.type "influx" }}
+    [INPUT]
+        Name cpu
+        Tag  my_cpu
+    [OUTPUT]
+        Name          influxdb
+        Match         *
+        Host          {{ .Values.backend.influx.host }}
+        Port          {{ .Values.backend.influx.port }}
+        Database      {{ .Values.backend.influx.database }}
+        Sequence_Tag  {{ .Values.backend.influx.sequence_tag }}
+        HTTP_User     {{ .Values.backend.influx.user }}
+        HTTP_Passwd   {{ .Values.backend.influx.password }}
+        Tag_Keys      method path
 {{ else if eq .Values.backend.type "forward" }}
     [OUTPUT]
         Name          forward

@@ -83,6 +83,14 @@ backend:
     tls_debug: 1
     message_key: "kubernetes"
   stackdriver: {}
+  type: influx
+  influx:
+    host: influxdb
+    port: 8086
+    database: fluentbit
+    sequence_tag: _seq
+    user: admin
+    password: fig-is-tasty!
 
   ##
   ## Ref: http://fluentbit.io/documentation/current/output/http.html
