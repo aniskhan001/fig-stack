@@ -1,8 +1,9 @@
-# <img src="./fig.svg" width="48"> FIG stack!
+# <div align="center"><img src="./fig.svg" width="48"> FIG stack</div>
 
-A minimal logging architecture
+<p align="center">A minimal logging architecture in Kubernetes
 <br>
-**FIG ➡ FluentBit + InfluxDB + Grafana**
+<strong>FluentBit + InfluxDB + Grafana ⎈ FIG</strong>
+</p>
 
 ![FIG Data Flow](./fig-data-flow.png)
 
@@ -14,15 +15,14 @@ Install FIG stack on your Kubernetes cluster
 ```
 
 ## Prerequisites
-* [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) is installed
-* [Helm 3](https://helm.sh/docs/intro/install/) is installed
-* A valid cluster config is available in your `~/.kube/config`
+* [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+* [Helm 3](https://helm.sh/docs/intro/install/)
 
 ## Why FIG?
 For a small Kubernetes cluster, I needed a minimal dashboard where logs from all the running applications in the Kubernetes environment can be viewed or `grep`ed from one place.
 I thought about ELK (Elastic + Logstash + Kibana) first, but then I realized my small cluster has a config of only 2 nodes with a total 2 vCPU and 4GB RAM, which wouldn’t be a wise option for Elastic to run since it requires more resources to run smoothly. I wanted to use as few resources as possible to have the logging architecture setup.
 
-#### Read more here: https://medium.com/@aniskhan001/logging-with-fluent-bit-influxdb-282c9bc35245
+#### Read more here: https://aniskhan001.me/tech/logging-with-fluent-bit-influxdb-fig
 
 
 
